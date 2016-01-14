@@ -1,0 +1,11 @@
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\TCPliumei.dll
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\TCPliumei.pdb
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHPlaySDKCS.pdb
+D:\OneDrive\代码\通信结构平台\TCPliumei\bin\Debug\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\TCPliumei\obj\Debug\TCPliumei.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\TCPliumei\obj\Debug\TCPliumei.dll
+D:\OneDrive\代码\通信结构平台\TCPliumei\obj\Debug\TCPliumei.pdb

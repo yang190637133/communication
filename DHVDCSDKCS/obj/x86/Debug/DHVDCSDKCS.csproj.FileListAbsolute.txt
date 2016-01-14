@@ -1,0 +1,4 @@
+D:\加热锅监控系统\DHVDCSDKCS\bin\x86\Debug\DHVDCSDKCS.dll
+D:\加热锅监控系统\DHVDCSDKCS\bin\x86\Debug\DHVDCSDKCS.pdb
+D:\加热锅监控系统\DHVDCSDKCS\obj\x86\Debug\DHVDCSDKCS.dll
+D:\加热锅监控系统\DHVDCSDKCS\obj\x86\Debug\DHVDCSDKCS.pdb

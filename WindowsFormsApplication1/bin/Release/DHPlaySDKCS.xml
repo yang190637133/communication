@@ -1,0 +1,1424 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DHPlaySDKCS</name>
+    </assembly>
+    <members>
+        <member name="F:DHPlaySDK.DHPlay.initialized">
+            <summary>
+            是否己经初始化
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DHPlay.pShowException">
+            <summary>
+            是否将错误抛出[默认不抛出，只将错误信息返回给属性LastOperationInfo]
+            </summary>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHThrowLastError(System.Int32)">
+            <summary>
+            SDK调用失败时抛出异常,成功时返回无异常信息,并把操作信息赋给LastOperationInfo
+            </summary>
+            <param name="nPort">播放通道</param>
+            <exception cref="T:System.ComponentModel.Win32Exception">原生异常,当SDK调用失败时触发。</exception>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHGetLastErrorName(System.UInt32)">
+            <summary>
+            错误代码转换为标准备的错误信息描述
+            </summary>
+            <param name="errorCode">错误代码</param>
+            <returns>标准备错误信息描述</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetShowException(System.Boolean)">
+            <summary>
+            设置使用本类的程序中的是否将错误信息抛出[默认不抛出，只将错误信息返回给属性LastOperationInfo]
+            </summary>
+            <param name="blnShowException">
+            true:抛出错误信息,并将错误信息返回给属性LastOperationInfo,由客户自行处理;
+            false:不抛出错误信息,将错误信息返回给属性LastOperationInfo,不作任何处理,用户可根据方法的返回值
+                  或LastOperationInfo判断是否有错误发生,然后再作相应处理
+            </param>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.StopSound:停止声音
+            </param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.UInt32)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.SetVolume:设置音量
+            2.PLAY_COMMAND.SetCurrentFrameNum:设置当前播放位置到指定帧号
+            </param>
+            <param name="nPort">播放通道</param>
+            <param name="nValue">命令参数值</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.Single@)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.SetPlayPos:设置文件播放的相对位置(百分比)
+            </param>
+            <param name="nPort">播放通道</param>
+            <param name="nValue">参数值</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.IntPtr)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.Start:开始播放
+            </param>
+            <param name="nPort">播放通道号</param>
+            <param name="hWnd">播放容器句柄</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.String)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.OpenFile:打开文件;
+            2.PLAY_COMMAND.CatchPic:抓图;</param>
+            <param name="nPort">播放通道号</param>
+            <param name="sFileName">打开/保存文件名</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.Stop:停止;
+            2.PLAY_COMMAND.CloseFile:关闭文件;
+            3.PLAY_COMMAND.Pause:暂停播放;
+            4.PLAY_COMMAND.ReSume:继续播放;
+            5.PLAY_COMMAND.Fast:快放;
+            6.PLAY_COMMAND.Slow:慢放;
+            7.PLAY_COMMAND.OneByOne:单帧播放;
+            8.PLAY_COMMAND.PlaySound:播放声音;
+            9.PLAY_COMMAND.PlaySoundShare:共享播放声音;
+            10.PLAY_COMMAND.StopSoundShare:停止共享播放声音;
+            11.PLAY_COMMAND.OneByOneBack:单帧回放
+            12.PLAY_COMMAND.CloseStream:关闭数据流
+            13.PLAY_COMMAND.CloseStreamEx:关闭数据流(音视频分开方式打开流)
+            </param>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.Boolean)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.GetCurrentFrameNum:获得当前帧序列号;
+            2.PLAY_COMMAND.GetCurrentFrameRate:获得当前帧率;
+            3.PLAY_COMMAND.GetFileTotalTime:获得文件总的时间长度,单位秒;
+            4.PLAY_COMMAND.GetFileTotalFrames:获得文件中的总帧数;
+            5.PLAY_COMMAND.GetPlayedTime:获得当前播放的时间,单位秒;
+            6.PLAY_COMMAND.GetPlayedTimeEx:获得当前播放的时间,单位毫秒;
+            7.PLAY_COMMAND.GetVolume:获得当前设置的音量;
+            </param>
+            <param name="nPort">播放通道号</param>
+            <param name="blnReturnValue">该参数无效，只是用来区分重载的，必须输入一个bool值</param>
+            <returns>对应命令的取值</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.UInt32,DHPlaySDK.COLOR_STRUCT@)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.GetColor:获得颜色值
+            </param>
+            <param name="nPort">播放通道号</param>
+            <param name="nRegionNum">显示区域</param>
+            <param name="returnColor">颜色返回值</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,DHPlaySDK.FRAME_INFO@)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.GetPictureSize:获得帧原始图像大小
+            </param>
+            <param name="nPort">播放通道</param>
+            <param name="frameInfo">帧信息</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.IntPtr,System.UInt32,System.UInt32)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.OpenStream:打开流接口
+            2.PLAY_COMMAND.OpenStreamEx:以音视频分开输入的方式打开流
+            </param>
+            <param name="nPort">通道号</param>
+            <param name="pFileHeadBuff">目前不使用，填NULL</param>
+            <param name="nSize">目前不使用，填0</param>
+            <param name="nBufPoolSize">
+            设置播放器中存放数据流的缓冲区大小。
+            范围是SOURCE_BUF_MIN~ SOURCE_BUF_MAX。
+            一般设为900*1024，如果数据送过来相对均匀，可调小该值，如果数据传输不均匀，可增大该值</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHPlayControl(DHPlaySDK.PLAY_COMMAND,System.Int32,System.IntPtr,System.UInt32)">
+            <summary>
+            播放控制
+            </summary>
+            <param name="pPlayCom">
+            播放命令:
+            1.PLAY_COMMAND.OpenStream:输入从卡上得到的流数据；打开流并调用PLAY_Play之后才能输入数据。
+            2.PLAY_COMMAND.InputVideoData:输入从卡上得到的视频流 (可以是复合流，但音频数据会被忽略);打开流之后才能输入数据
+            3.PLAY_COMMAND.InputAudioData:输入从卡上得到的音频流；打开声音之后才能输入数据
+            </param>
+            <param name="nPort">通道号</param>
+            <param name="pBuf">缓冲区地址</param>
+            <param name="nSize">缓冲区大小</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHRigisterDrawFun(System.Int32,DHPlaySDK.DrawFun,System.Int32)">
+            <summary>
+            注册一个回调函数，获得当前表面的device context, 你可以在这个DC上画图（或写字），就好像在窗口的客户区DC上绘图，
+            但这个DC不是窗口客户区的DC，而是DirectDraw里的Off-Screen表面的DC。注意，如果是使用overlay表面，这个接口无效，
+            你可以直接在窗口上绘图，只要不是透明色就不会被覆盖。
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="privateDrawFun">回调函数句柄</param>
+            <param name="nUser">用户数据</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetDisplayRegion(System.Int32,System.UInt32,System.IntPtr,System.IntPtr,System.Boolean)">
+            <summary>
+            设置或增加显示区域。可以做局部放大显示。 
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nRegionNum">显示区域序号，0~(MAX_DISPLAY_WND-1)。如果nRegionNum为0，表示对主要显示窗口中</param>
+            <param name="pSrcRect">局部显示区域</param>
+            <param name="hDestWnd">显示窗口句柄</param>
+            <param name="bEnable">打开（设置）或关闭显示区域</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHRefreshPlayEx(System.Int32,System.UInt32)">
+            <summary>
+            刷新显示，刷新多区域显示的窗口
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nRegionNum">显示区域序号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHStartDataRecord(System.Int32,System.String,System.Int32)">
+            <summary>
+            开始流数据录像。只对流模式有用，在PLAY_Play之后调用
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="sFileName">录像文件名，如果文件名中有不存在的文件夹，就创建该文件夹</param>
+            <param name="idataType">0:原始数据流;1:AVI</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHStopDataRecord(System.Int32)">
+            <summary>
+            停止流数据录像
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetDecCallBack(System.Int32,DHPlaySDK.DecCBFun)">
+            <summary>
+            设置回调函数
+            </summary>
+            <param name="nPort">端口</param>
+            <param name="cbFun">回调函数</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetDecCBStream(System.Int32,DHPlaySDK.STREAM_TYPE)">
+            <summary>
+            设置解码回调的流类型
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="streamType">解码回调流类型</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetDisplayCallBack(System.Int32,DHPlaySDK.DisplayCBFun,System.Int32)">
+            <summary>
+            设置视频图像数据回调，可用作抓图。如果要停止回调，可以把回调函数指针DisplayCBFun设为NULL。
+            一旦设置回调函数，则一直有效，直到程序退出。该函数可以在任何时候调用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="dCBFun">DisplayCBFun的回调函数</param>
+            <param name="nUser">用户自定义数据,默认为0</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetDisplayCallBack(System.Int32,DHPlaySDK.DisplayCBFun)">
+            <summary>
+            设置视频图像数据回调，可用作抓图。如果要停止回调，可以把回调函数指针DisplayCBFun设为NULL。一旦设置回调函数，
+            则一直有效，直到程序退出。该函数可以在任何时候调用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="dCBFun">DisplayCBFun的回调函数</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetAudioCallBack(System.Int32,DHPlaySDK.FunAudio,System.Int32)">
+            <summary>
+            音频帧解码后的wave数据回调
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="funAudio">音频回调函数</param>
+            <param name="nUser">用户自定义数据</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHGetSdkVersion">
+            <summary>
+            得到当前播放器sdk的主版本号、次版本号和补丁号
+            </summary>
+            <returns>
+            高16位表示当前的主版本号。
+            9~16位表示次版本号，1~8位表示次补丁号。
+            例：返回值0x00030107表示：主版本号是3，次版本号是1，补丁号是7
+            </returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHGetSdkVersion(System.String)">
+            <summary>
+            按指定格式返回当前播放器sdk的版本号
+            </summary>
+            <param name="verFormatStyle">版本格式字符串:A:主版本号;B:次版本号;C:补丁号;</param>
+            <returns>播放器的SDK的版本号</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHSetStreamOpenMode(System.Int32,DHPlaySDK.PLAY_MODE)">
+            <summary>
+            设置流播放的模式。必须在播放之前设置
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nMode">播放模式</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.DHConvertToTime(System.UInt32,System.Decimal,System.String)">
+            <summary>
+            将一个整数值转为指定的时间格式
+            </summary>
+            <param name="uintValue">时间值</param>
+            <param name="rate">与秒之间的进率,例:时间值单位为秒时,则进率为1;时间值单位为毫秒,则进率为0.001;时间值单位为分,
+            则进率为60,如果时间格式字符串没有时此参数无效</param>
+            <param name="timeStyle">时间格式字符串,如:HH:mm:ss,参见DateTime.Format字符串定义</param>
+            <returns>指定格式的字符串时间表示</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_OpenFile(System.Int32,System.String)">
+            <summary>
+            打开文件
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="sFileName">文件名</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_Play(System.Int32,System.IntPtr)">
+            <summary>
+            开始播放。如果已经播放，改变当前播放状态为正常速度播放
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="hWnd">播放窗口句柄</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_Stop(System.Int32)">
+            <summary>
+            停止播放
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_CloseFile(System.Int32)">
+            <summary>
+            关闭播放文件
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetCurrentFrameNum(System.Int32,System.UInt32)">
+            <summary>
+            设置当前播放播放位置到指定帧号；根据帧号来定位播放位置。此函数必须在文件索引生成之后才能调用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nFrameNum">帧序号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetPlayedTimeEx(System.Int32,System.UInt32)">
+            <summary>
+            根据时间设置文件播放位置，此接口比PLAY_SetPlayPos费时，但如果用时间来控制进度条（与PLAY_GetPlayedTime(Ex)配合使用），那么可以使进度条平滑滚动
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nTime">设置文件播放位置到指定时间。单位毫秒</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetPlayPos(System.Int32,System.Single)">
+            <summary>
+            设置文件播放指针的相对位置（百分比）
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="fRelativePos">范围0-100%</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetPlayPos(System.Int32)">
+            <summary>
+            获得文件播放指针的相对位置
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>范围0-100%</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetColor(System.Int32,System.UInt32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设置图象的视频参数，即时起作用
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nRegionNum">显示区域，参考PLAY_SetDisplayRegion；如果只有一个显示区域(通常情况)设为0</param>
+            <param name="nBrightness">亮度，默认64； 范围0-128</param>
+            <param name="nContrast">对比度，默认64； 范围0-128</param>
+            <param name="nSaturation">饱和度，默认64； 范围0-128</param>
+            <param name="nHue">色调，默认64； 范围0-128</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetStreamOpenMode(System.Int32,System.UInt32)">
+            <summary>
+            设置流播放的模式。必须在播放之前设置
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nMode">
+            STREAME_REALTIME:实时模式（默认）
+            STREAME_FILE:文件模式
+            </param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_PlaySound(System.Int32)">
+            <summary>
+            打开声音
+            [同一时刻只能有一路声音。如果现在已经有声音打开，则自动关闭原来已经打开的声音。]
+            **注意：默认情况下声音是关闭的**
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_StopSound">
+            <summary>
+            关闭声音
+            </summary>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_PlaySoundShare(System.Int32)">
+            <summary>
+            以共享方式播放声音，播放本路声音而不去关闭其他路的声音
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_StopSoundShare(System.Int32)">
+            <summary>
+            以共享方式关闭声音。PLAY_PlaySound和PLAY_StopSound是以独占方式播放声音的。
+            **注意：在同一个进程中，所有通道必须使用相同的方式播放或关闭声音**
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetVolume(System.Int32,System.UInt32)">
+            <summary>
+            设置音量
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nVolume">音量的值，范围0-0XFFFF</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetVolume(System.Int32)">
+            <summary>
+            获得当前设置的音量
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_AdjustWaveAudio(System.Int32,System.Int32)">
+            <summary>
+            调整WAVE波形，可以改变声音的大小。它和PLAY_SetVolume的不同在于，它是调整声音数据，
+            只对该路其作用，而PLAY_SetVolume是调整声卡音量，对整个系统起作用。该函数尚未实现
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nCoefficient">调整的参数，范围从MIN_WAVE_COEF 到 MAX_WAVE_COEF，0是不调整</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_OpenStream(System.Int32,System.IntPtr,System.UInt32,System.UInt32)">
+            <summary>
+            打开流接口（类似打开文件）
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="pFileHeadBuf">目前不使用，填IntPtr.Zero</param>
+            <param name="nSize">目前不使用，填0</param>
+            <param name="nBufPoolSize">
+            设置播放器中存放数据流的缓冲区大小
+            范围是DATABUF_SIZE.SOURCE_BUF_MIN~ DATABUF_SIZE.SOURCE_BUF_MAX
+            一般设为900*1024，如果数据送过来相对均匀，可调小该值，如果数据传输不均匀，可增大该值
+            </param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_InputData(System.Int32,System.IntPtr,System.UInt32)">
+            <summary>
+            输入从卡上得到的流数据；打开流并调用PLAY_Play之后才能输入数据
+            </summary>
+            <param name="nPort">通道号</param>
+            <param name="pBuf">缓冲区地址</param>
+            <param name="nSize">缓冲区大小</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_CloseStream(System.Int32)">
+            <summary>
+            关闭数据流（类似关闭文件）
+            </summary>
+            <param name="nPort">通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_OpenStreamEx(System.Int32,System.IntPtr,System.UInt32,System.UInt32)">
+            <summary>
+            以音视频分开输入的方式打开流
+            </summary>
+            <param name="nPort">通道号</param>
+            <param name="pFileHeadBuf">用户从卡上得到的文件头数据</param>
+            <param name="nSize">文件头长度</param>
+            <param name="nBufPoolSize">设置播放器中存放数据流的缓冲区大小。范围是SOURCE_BUF_MIN~ SOURCE_BUF_MAX</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_InputVideoData(System.Int32,System.IntPtr,System.UInt32)">
+            <summary>
+            输入从卡上得到的视频流 (可以是复合流，但音频数据会被忽略)；
+            打开流之后才能输入数据
+            </summary>
+            <param name="nPort">通道号</param>
+            <param name="pBuf">缓冲区地址</param>
+            <param name="nSize">缓冲区大小</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_InputAudioData(System.Int32,System.IntPtr,System.UInt32)">
+            <summary>
+            输入从卡上得到的音频流；打开声音之后才能输入数据
+            </summary>
+            <param name="nPort">通道号</param>
+            <param name="pBuf">缓冲区地址</param>
+            <param name="nSize">缓冲区大小</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_CloseStreamEx(System.Int32)">
+            <summary>
+            关闭数据流
+            </summary>
+            <param name="nPort">通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetSecurityKey(System.Int32,System.IntPtr,System.UInt32)">
+            <summary>
+            揭秘接口
+            </summary>
+            <param name="nPort"></param>
+            <param name="??"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_Pause(System.Int32,System.UInt32)">
+            <summary>
+            通道号
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nPause">1:暂停;0:恢复</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_Fast(System.Int32)">
+            <summary>
+            快速播放。播放速度分为九级，播放速度分别为每秒播放
+            1,3,6,12,25,50,75,100,125帧图像。每次调用播放速度提
+            升一级最多调 用4次，要恢复正常播放调用PLAY_Play,从当前位置开始正常播放
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_Slow(System.Int32)">
+            <summary>
+            慢速播放，同上。每次调用播放速度降一级；最多调用4次，要恢复正常播放调用PLAY_Play
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_OneByOne(System.Int32)">
+            <summary>
+            单帧播放。要恢复正常播放调用PLAY_ Play
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_OneByOneBack(System.Int32)">
+            <summary>
+            单帧回放。每调用一次倒退一帧。此函数必须在文件索引生成之后才能调用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetLastError(System.Int32)">
+            <summary>
+            获得当前错误的错误码。用户应该在调用某个函数失败时，调用此函数以获得错误的详细信息。
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetDecCallBack(System.Int32,DHPlaySDK.DecCBFun@)">
+            <summary>
+            设置回调函数，替换播放器中的显示部分，由用户自己控制显示，该函数在PLAY_Play之前调用，
+            在PLAY_Stop时自动失效，下次调用PLAY_Play之前需要重新设置。
+            解码部分不控制速度，只要用户从回调函数中返回，解码器就会解码下一部分数据。
+            【注意】这个功能的使用需要用户对视频显示和声音播放有足够的了解，否则请慎重使用。
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="cbFun">回调函数指针</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetDecCBStream(System.Int32,System.UInt32)">
+            <summary>
+            设置解码回调的流类型
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nStream">
+            1:视频流;
+            2:音频流;
+            3:复合流;
+            </param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetDisplayCallBack(System.Int32,DHPlaySDK.DisplayCBFun,System.Int32)">
+            <summary>
+            设置视频图像数据回调，可用作抓图。如果要停止回调，可以把回调函数指针DisplayCBFun设为NULL。一旦设置回调函数，则一直有效，直到程序退出。该函数可以在任何时候调用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="dCBFun">回调函数</param>
+            <param name="nUser">用户自定义数据</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetAudioCallBack(System.Int32,DHPlaySDK.FunAudio,System.Int32)">
+            <summary>
+            音频帧解码后的wave数据回调
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="funAudio">音频回调函数</param>
+            <param name="nUser">用户自定义数据</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_SetDisplayRegion(System.Int32,System.UInt32,System.IntPtr,System.IntPtr,System.Boolean)">
+            <summary>
+            设置或增加显示区域。可以做局部放大显示。 
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nRegionNum">显示区域序号，0~(MAX_DISPLAY_WND-1)。如果nRegionNum为0，表示对主要显示窗口中</param>
+            <param name="pSrcRect">局部显示区域</param>
+            <param name="hDestWnd">显示窗口句柄</param>
+            <param name="bEnable">打开（设置）或关闭显示区域</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_RefreshPlayEx(System.Int32,System.UInt32)">
+            <summary>
+            刷新显示，刷新多区域显示的窗口
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nRegionNum">显示区域序号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetCurrentFrameNum(System.Int32)">
+            <summary>
+            得到当前播放的帧序号。而PLAY_GetPlayedFrames是总共解码的帧数。
+            如果文件播放位置不被改变，那么这两个函数的返回值应该非常接近，除非码流丢失数据。
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>当前播放的帧序号</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetFileTime(System.Int32)">
+            <summary>
+            得到文件总的时间长度，单位秒
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>文件总的时间长度值</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetCaps">
+            <summary>
+            测试播放器需要的一些系统功能。
+            </summary>
+            <returns>属性值，按位取1~9位分别表示以下信息（位与是TRUE表示支持）：
+            SUPPORT_DDRAW		   	支持DIRECTDRAW；如果不支持，则播放器不能工作。 
+            SUPPORT_BLT			    显卡支持BLT操作；如果不支持，则播放器不能工作。 
+            SUPPORT_BLTFOURCC		显卡BLT支持颜色转换；如果不支持，播放器会使用软件方式作RGB转换。 
+            SUPPORT_BLTSHRINKX      显卡BLT支持X轴缩小；如果不支持，系统使用软件方式转换。 
+            SUPPORT_BLTSHRINKY      显卡BLT支持Y轴缩小；如果不支持，系统使用软件方式转换。 
+            SUPPORT_BLTSTRETCHX	    显卡BLT支持X轴放大；如果不支持，系统使用软件方式转换。 
+            SUPPORT_BLTSTRETCHY	    显卡BLT支持Y轴放大；如果不支持，系统使用软件方式转换。 
+            SUPPORT_SSE CPU		    支持SSE指令,Intel Pentium3以上支持SSE指令。 
+            SUPPORT_MMX CPU		    支持MMX指令集。
+            </returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetColor(System.Int32,System.UInt32,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            相应的获得颜色值
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="nRegionNum">显示区域，参考PLAY_SetDisplayRegion；如果只有一个显示区域(通常情况)设为0</param>
+            <param name="pBrightness">亮度</param>
+            <param name="pContrast">对比度</param>
+            <param name="pSaturation">饱和度</param>
+            <param name="pHue">色调</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetCurrentFrameRate(System.Int32)">
+            <summary>
+            得到当前码流中编码时的帧率
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>当前码流中编码时的帧率值</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetFileTotalFrames(System.Int32)">
+            <summary>
+            得到文件中的总帧数
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>文件中的总帧数</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetPlayedTime(System.Int32)">
+            <summary>
+            得到文件当前播放的时间，单位秒
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>文件当前播放的时间</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetPlayedTimeEx(System.Int32)">
+            <summary>
+            得到文件当前播放的时间，单位毫秒
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <returns>文件当前播放的时间</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetPictureSize(System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            获得码流中原始图像的大小，根据此大小来设置显示窗口的区域，可以不用显卡做缩放工作，
+            对于那些不支持硬件缩放的显卡来说非常有用
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="pWidth">原始图像的宽。在PAL制CIF格式下是352</param>
+            <param name="pHeight">原始图像的高。在PAL制CIF格式下是288</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_GetSdkVersion">
+            <summary>
+            得到当前播放器sdk的主版本号、次版本号和补丁号
+            </summary>
+            <returns>
+            高16位表示当前的主版本号。
+            9~16位表示次版本号，1~8位表示次补丁号。
+            如：返回值0x00030107表示：主版本号是3，次版本号是1，补丁号是7</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_ConvertToBmpFile(System.String@,System.Int32,System.Int32,System.Int32,System.Int32,System.String@)">
+            <summary>
+            将抓图得到的图像数据保存成BMP文件。转换函数占用的cpu资源，如果不需要保存图片，则不要调用。
+            </summary>
+            <param name="pBuf">同抓图回调函数中的参数</param>
+            <param name="nSize">同抓图回调函数中的参数</param>
+            <param name="nWidth">同抓图回调函数中的参数</param>
+            <param name="nHeight">同抓图回调函数中的参数</param>
+            <param name="nType">同抓图回调函数中的参数</param>
+            <param name="sFileName">要保存的文件名。最好以BMP作为文件扩展名</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_CatchPic(System.Int32,System.String)">
+            <summary>
+            抓图
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="sFileName">文件名称</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_StartDataRecord(System.Int32,System.String,System.Int32)">
+            <summary>
+            开始流数据录像。只对流模式有用，在PLAY_Play之后调用。
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="sFileName">录像文件名，如果文件名中有不存在的文件夹，就创建该文件夹</param>
+            <param name="idataType">0:原始码流;1:AVI</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_StopDataRecord(System.Int32)">
+            <summary>
+            停止流数据录像
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="M:DHPlaySDK.DHPlay.PLAY_RigisterDrawFun(System.Int32,DHPlaySDK.DrawFun,System.Int32)">
+            <summary>
+            字符叠加
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="privateDrawFun">回调函数句柄</param>
+            <param name="nUser">用户数据</param>
+            <returns>true:成功;false:失败</returns>
+        </member>
+        <member name="T:DHPlaySDK.DrawFun">
+            <summary>
+            字符叠加回调函数
+            </summary>
+            <param name="nPort">通道号</param>
+            <param name="hDc">OffScreen表面设备上下文，你可以像操作显示窗口客户区DC那样操作它</param>
+            <param name="nUser">用户数据</param>
+        </member>
+        <member name="T:DHPlaySDK.DecCBFun">
+            <summary>
+            播放器数据回调
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="pBuf">解码后的音视频数据</param>
+            <param name="nSize">解码后的音视频数据pBuf的长度</param>
+            <param name="pFrameInfo">图像和声音的帧信息</param>
+            <param name="nReserved1">保留参数</param>
+            <param name="nReserved2">保留参数</param>
+        </member>
+        <member name="T:DHPlaySDK.pFileRefDone">
+            <summary>
+            
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nUser">用户数据</param>
+        </member>
+        <member name="T:DHPlaySDK.funEncChange">
+            <summary>
+            
+            </summary>
+            <param name="nPort">播放器通道号</param>
+            <param name="nUser">用户数据</param>
+        </member>
+        <member name="T:DHPlaySDK.DisplayCBFun">
+            <summary>
+            设置视频图像数据的回调函数委托
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="pBuf">返回图像数据</param>
+            <param name="nSize">返回图像数据大小</param>
+            <param name="nWidth">画面宽，单位像素</param>
+            <param name="nHeight">画面高</param>
+            <param name="nStamp">时标信息，单位毫秒</param>
+            <param name="nType">数据类型， T_RGB32，T_UYVY，详见解码回调视频帧类型说明。</param>
+            <param name="nReceaved">保留</param>
+        </member>
+        <member name="T:DHPlaySDK.FunAudio">
+            <summary>
+            音频帧解码后的wave数据回调委托
+            </summary>
+            <param name="nPort">播放通道号</param>
+            <param name="pAudioBuf">格式音频数据</param>
+            <param name="nSize">音频数据长度</param>
+            <param name="nStamp">时标(ms)</param>
+            <param name="nType">音频类型T_AUDIO16, 采样率8000，单声道，每个采样点16位表示</param>
+            <param name="nUser">用户自定义数据</param>
+        </member>
+        <member name="T:DHPlaySDK.FRAME_POS">
+            <summary>
+            帧位置
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nFilePos">
+            <summary>
+            指定帧在文件中的偏移位置
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nFrameNum">
+            <summary>
+            帧序号
+            </summary> 
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nFrameTime">
+            <summary>
+            帧时间
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nErrorFrameNum">
+            <summary>
+            错误帧号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.pErrorTime">
+            <summary>
+            错误帧时间
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nErrorLostFrameNum">
+            <summary>
+            错误帧帧号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_POS.nErrorFrameSize">
+            <summary>
+            错误帧大小
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.SYSTEM_TIME">
+            <summary>
+            系统时间格式(C++中)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wYear">
+            <summary>
+            年
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wMonth">
+            <summary>
+            月
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wDayOfWeek">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wDay">
+            <summary>
+            日
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wHour">
+            <summary>
+            时
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wMinute">
+            <summary>
+            分
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wSecond">
+            <summary>
+            秒
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSTEM_TIME.wMilliseconds">
+            <summary>
+            微秒
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.COLOR_STRUCT">
+            <summary>
+            自定义颜色结构
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.COLOR_STRUCT.pBrightness">
+            <summary>
+            亮度[范围:0-128]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.COLOR_STRUCT.pContrast">
+            <summary>
+            对比度[范围:0-128]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.COLOR_STRUCT.pSaturation">
+            <summary>
+            饱和度[范围:0-128]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.COLOR_STRUCT.pHue">
+            <summary>
+            色调[范围:0-128]
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.FRAME_INFO">
+            <summary>
+            帧信息
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_INFO.nWidth">
+            <summary>
+            画面宽，单位像素。如果是音频数据则为0
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_INFO.nHeight">
+            <summary>
+            画面高。如果是音频数据则为0
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_INFO.nStamp">
+            <summary>
+            时标信息，单位毫秒
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_INFO.nType">
+            <summary>
+            数据类型，T_AUDIO16，T_RGB32， T_YV12，详见宏定义说明。
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_INFO.nFrameRate">
+            <summary>
+            编码时产生的图像帧率
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.FRAME_TYPE">
+            <summary>
+            帧类型
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_TYPE.pDataBuf">
+            <summary>
+            帧数据
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_TYPE.nSize">
+            <summary>
+            帧大小
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_TYPE.nFrameNum">
+            <summary>
+            帧序号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_TYPE.bIsAudio">
+            <summary>
+            是否音频帧(TRUE:1;FALSE:0)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.FRAME_TYPE.nReserved">
+            <summary>
+            保留字
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.OPERATION_INFO">
+            <summary>
+            错误内容
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.OPERATION_INFO.errCode">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.OPERATION_INFO.errMessage">
+            <summary>
+            错误描述
+            </summary>
+        </member>
+        <member name="M:DHPlaySDK.OPERATION_INFO.ToString(System.String)">
+            <summary>
+            按自定义格式返回错误内容字符串
+            </summary>
+            <param name="FormatStyle">错误内容字符串格式：errcode代替错误代码;errmsg代替错误描述</param>
+            <returns>自定义格式的错误内容字符串</returns>
+        </member>
+        <member name="T:DHPlaySDK.STREAM_TYPE">
+            <summary>
+            解码回调流类型
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.STREAM_TYPE.STREAM_WITHOUT">
+            <summary>
+            解码回调流:无
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.STREAM_TYPE.STREAM_AUDIO">
+            <summary>
+            解码回调流:音频
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.STREAM_TYPE.STREAM_VIDEO">
+            <summary>
+            解码回调流:视频
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.STREAM_TYPE.STREAM_MIX">
+            <summary>
+            解码回调流:混合
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.PLAY_COMMAND">
+            <summary>
+            播放控制命令
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.Start">
+            <summary>
+            开始播放
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.Pause">
+            <summary>
+            暂停播放
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.ReSume">
+            <summary>
+            继续播放
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.Stop">
+            <summary>
+            停止播放
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.OpenFile">
+            <summary>
+            打开文件
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.CloseFile">
+            <summary>
+            关闭文件
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.Fast">
+            <summary>
+            快放(快速播放。播放速度分为九级，播放速度分别为每秒播放1,3,6,12,25,50,75,100,125帧图像。
+            每次调用播放速度提升一级最多调 用4次，要恢复正常播放调用PLAY_Play,从当前位置开始正常播放)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.Slow">
+            <summary>
+            慢放(同快放，每次调用播放速度降一级；最多调用4次，要恢复正常播放调用PLAY_Play)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.OneByOne">
+            <summary>
+            单帧(单帧播放。要恢复正常播放调用PLAY_ Play)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.OneByOneBack">
+            <summary>
+            单帧回放(每调用一次倒退一帧,要恢复正常播放调用PLAY_ Play)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.CatchPic">
+            <summary>
+            抓图
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetCurrentFrameNum">
+            <summary>
+            获得当前帧序号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.SetCurrentFrameNum">
+            <summary>
+            设置当前播放位置到指定的帧号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetCurrentFrameRate">
+            <summary>
+            获得当前帧率
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetFileTotalFrames">
+            <summary>
+            获得文件中的总帧数
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetFileTotalTime">
+            <summary>
+            获得文件总的时间长度,单位秒
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetPlayedTime">
+            <summary>
+            得到文件当前的播放的时间,单位秒
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetPlayedTimeEx">
+            <summary>
+            得到文件当前的播放的时间**单位:毫秒**
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.SetPlayedTimeEx">
+            <summary>
+            根据时间设置文件播放的位置
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetColor">
+            <summary>
+            获得颜色值
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.SetColor">
+            <summary>
+            设置颜色属性
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.PlaySound">
+            <summary>
+            播放声音[同一时刻只能有一路声音]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.StopSound">
+            <summary>
+            停止声音
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.PlaySoundShare">
+            <summary>
+            以共享方式播放声音[播放本路声音而不去关闭其他路的声音]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.StopSoundShare">
+            <summary>
+            以共享方式关闭声音
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.SetVolume">
+            <summary>
+            设置音量[范围:0-0XFFFF(0-65535)]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetVolume">
+            <summary>
+            获得当前设置的音量
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.AdjustWaveAudio">
+            <summary>
+            调整WAVE波形，可以改变声音的大小[它和SetVolume的不同在于，它是调整声音数据，只对该路其作用，
+            而SetVolume是调整声卡音量，对整个系统起作用]
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetPlayPos">
+            <summary>
+            获得文件播放位置
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.SetPlayPos">
+            <summary>
+            设置文件播放位置
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.GetPictureSize">
+            <summary>
+            获取帧原始图像大小
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.ToBegin">
+            <summary>
+            定位到录像开头
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.ToEnd">
+            <summary>
+            定位到录像结束
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.OpenStream">
+            <summary>
+            打开流接口
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.InputData">
+            <summary>
+            输入从卡上得到的流数据；打开流并调用PLAY_Play之后才能输入数据
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.CloseStream">
+            <summary>
+            关闭数据流
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.OpenStreamEx">
+            <summary>
+            以音视频分开输入的方式打开流
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.InputVideoData">
+            <summary>
+            输入从卡上得到的视频流 (可以是复合流，但音频数据会被忽略)
+            打开流之后才能输入数据
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.InputAudioData">
+            <summary>
+            输入从卡上得到的音频流；打开声音之后才能输入数据
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_COMMAND.CloseStreamEx">
+            <summary>
+            关闭数据流
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.SYSFUN_TYPE">
+            <summary>
+            系统功能
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_DDRAW">
+            <summary>
+            支持DIRECTDRAW(如果不支持，则播放器不能工作)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLT">
+            <summary>
+            显卡支持BLT操作(如果不支持，则播放器不能工作)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLTFOURCC">
+            <summary>
+            显卡BLT支持颜色转换
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLTSHRINKX">
+            <summary>
+            显卡BLT支持X轴缩小
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLTSHRINKY">
+            <summary>
+            显卡BLT支持Y轴缩小
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLTSTRETCHX">
+            <summary>
+            显卡BLT支持X轴放大
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_BLTSTRETCHY">
+            <summary>
+            显卡BLT支持Y轴放大
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_SSE">
+            <summary>
+            CPU支持SSE指令,Intel Pentium3以上支持SSE指令
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.SYSFUN_TYPE.SUPPORT_MMX">
+            <summary>
+            CPU支持MMX指令集
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.VIDEO_TYPE">
+            <summary>
+            解码回调视频帧类型
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.AUDIO_TYPE">
+            <summary>
+            解码回调音频帧类型
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.PLAY_MODE">
+            <summary>
+            数据流播放模式
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_MODE.STREAME_REALTIME">
+            <summary>
+            最实时方式
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.PLAY_MODE.STREAME_FILE">
+            <summary>
+            最流畅方式
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.DATABUF_SIZE">
+            <summary>
+            数据流原始缓冲大小
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DATABUF_SIZE.SOURCE_BUF_MAX">
+            <summary>
+            最大原始缓冲(1024*100000)
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DATABUF_SIZE.SOURCE_BUF_MIN">
+            <summary>
+            最小原始缓冲(1024*50)
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.GOTO_TYPE">
+            <summary>
+            定位类型
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.GOTO_TYPE.BY_FRAMENUM">
+            <summary>
+            按帧号
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.GOTO_TYPE.BY_FRAMETIME">
+            <summary>
+            按时间
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.BUF_FRAME_NUM">
+            <summary>
+            解码缓冲帧数
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_FRAME_NUM.MAX_DIS_FRAMES">
+            <summary>
+            最大解码缓冲帧数
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_FRAME_NUM.MIN_DIS_FRAMES">
+            <summary>
+            最小解码缓冲帧数
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.DISPLAY_MODE">
+            <summary>
+            显示类型和最大区域显示数
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DISPLAY_MODE.DISPLAY_NORMAL">
+            <summary>
+            以正常分辨率显示
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DISPLAY_MODE.DISPLAY_QUARTER">
+            <summary>
+            以四分之一分辨率显示
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.DISPLAY_MODE.MAX_DISPLAY_WND">
+            <summary>
+            最大区域显示数(同时最多打开4个区域显示窗口)
+            </summary>
+        </member>
+        <member name="T:DHPlaySDK.BUF_TYPE">
+            <summary>
+            缓冲类型
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_TYPE.BUF_VIDEO_SRC">
+            <summary>
+            视频源缓冲
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_TYPE.BUF_AUDIO_SRC">
+            <summary>
+            音频源缓冲
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_TYPE.BUF_VIDEO_RENDER">
+            <summary>
+            解码后视频数据缓冲
+            </summary>
+        </member>
+        <member name="F:DHPlaySDK.BUF_TYPE.BUF_AUDIO_RENDER">
+            <summary>
+            解码后音频数据缓冲
+            </summary>
+        </member>
+    </members>
+</doc>

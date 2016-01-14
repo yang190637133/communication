@@ -1,0 +1,15 @@
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\Cpanel.exe.config
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\Cpanel.exe
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\Cpanel.pdb
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.exe
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.pdb
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\DHDVR.dll
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\TCPServer.dll
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\DHDVR.pdb
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\TCPServer.pdb
+D:\OneDrive\代码\通信结构平台\Cpanel\bin\Debug\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\Cpanel\obj\Debug\Cpanel.Form1.resources

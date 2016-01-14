@@ -1,0 +1,14 @@
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\P2P-v.exe.config
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\P2P-v.exe
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\P2P-v.pdb
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\TCPclient.dll
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\MyInterface.dll
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\TCPclient.pdb
+D:\OneDrive\代码\通信结构平台\P2P-v\bin\Debug\MyInterface.pdb
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P-v.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P_v.Form1.resources
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P_v.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P-v.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P-v.exe
+D:\OneDrive\代码\通信结构平台\P2P-v\obj\Debug\P2P-v.pdb

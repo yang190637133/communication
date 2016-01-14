@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DHVDCSDKCS</name>
+    </assembly>
+    <members>
+        <member name="M:DHVDCSDK.DHVDC.DHInitDecDevice(System.Int32@)">
+            <summary>
+            初始化设备
+            </summary>
+            <param name="pDeviceTotal">初始化成功的通道个数</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHReleaseDecDevice">
+            <summary>
+            关闭设备，在程序退出时调用
+            </summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHInitDirectDraw(System.IntPtr,System.UInt32)">
+            <summary>
+            初始化DirectDraw[有关DirectDraw部分已经由SDK内部创建，用户不需要调用该接口函数]
+            </summary>
+            <param name="hParent">窗口句柄</param>
+            <param name="colorKey">用户设置的透明色</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHReleaseDirectDraw">
+            <summary>
+            释放DirectDraw
+            </summary>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHChannelOpen(System.Int32,System.UInt32@)">
+            <summary>
+            打开通道，获取相关的操作句柄，与通道相关的操作必须使用该句柄
+            </summary>
+            <param name="nChannelNum">通道号（从0开始）</param>
+            <param name="phChannel">操作句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHChannelClose(System.UInt32)">
+            <summary>
+            关闭通道，释放相关资源
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHOpenStream(System.UInt32,System.IntPtr,System.UInt32)">
+            <summary>
+            打开流接口（类似于打开文件）
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="pFileHeadBuf">文件头数据</param>
+            <param name="dwSize">文件头长度</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHOpenStreamEx(System.UInt32,System.IntPtr,System.UInt32)">
+            <summary>
+            打开流接口(增强版)
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="pFileHeadBuf">文件头数据</param>
+            <param name="dwSize">文件头长度</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHResetStream(System.UInt32)">
+            <summary>
+            清空缓冲
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHCloseStream(System.UInt32)">
+            <summary>
+            关闭数据流
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHCloseStreamEx(System.UInt32)">
+            <summary>
+            关闭数据流
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHInputData(System.UInt32,System.IntPtr,System.UInt32)">
+            <summary>
+            输入数据，打开流之后才能输入数据
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="pBuf">缓冲区地址</param>
+            <param name="dwSize">缓冲区大小</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHOpenFile(System.UInt32,System.String)">
+            <summary>
+            打开文件
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="szFileName">文件名</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHCloseFile(System.UInt32)">
+            <summary>
+            关闭文件
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHPlay(System.UInt32,System.IntPtr)">
+            <summary>
+            开始播放
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="hwnd">窗口句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHPause(System.UInt32,System.Boolean)">
+            <summary>
+            暂停播放
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <param name="bPause">true:暂停;false:继续</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DHStop(System.UInt32)">
+            <summary>
+            结束播放
+            </summary>
+            <param name="hChannel">通道句柄</param>
+            <returns>错误码</returns>
+        </member>
+        <member name="T:DHVDCSDK.DHVDC.VIDEO_STANDARD">
+            <summary>
+            视频标准
+            </summary>
+        </member>
+        <member name="M:DHVDCSDK.DHVDC.DH_InitDecDevice(System.Int32@)">
+            <summary>
+            初始化设备
+            </summary>
+            <param name="pDeviceTotal">初始化成功的通道个数</param>
+            <returns>错误码</returns>
+        </member>
+    </members>
+</doc>

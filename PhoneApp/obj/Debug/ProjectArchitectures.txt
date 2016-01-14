@@ -1,0 +1,2 @@
+D:\OneDrive\代码\通信结构平台\PhoneApp\PhoneApp.csproj;neutral
+D:\OneDrive\代码\通信结构平台\WPClient\WPClient.csproj;neutral

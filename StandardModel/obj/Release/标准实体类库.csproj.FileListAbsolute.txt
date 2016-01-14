@@ -1,0 +1,5 @@
+E:\通信结构平台\StandardModel\bin\Release\StandardModel.dll
+E:\通信结构平台\StandardModel\bin\Release\StandardModel.pdb
+E:\通信结构平台\StandardModel\bin\Release\Newtonsoft.Json.dll
+E:\通信结构平台\StandardModel\obj\Release\StandardModel.dll
+E:\通信结构平台\StandardModel\obj\Release\StandardModel.pdb

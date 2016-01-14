@@ -1,0 +1,16 @@
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\DHDVR.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\TCPServer.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\DHDVR.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\TCPServer.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\CameraServer.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\CameraServer.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Debug\config.txt

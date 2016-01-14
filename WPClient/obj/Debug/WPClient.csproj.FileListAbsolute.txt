@@ -1,0 +1,6 @@
+D:\OneDrive\代码\通信结构平台\WPClient\Bin\Debug\Newtonsoft.Json.dll
+D:\OneDrive\代码\通信结构平台\WPClient\Bin\Debug\WPClient.dll
+D:\OneDrive\代码\通信结构平台\WPClient\Bin\Debug\WPClient.pdb
+D:\OneDrive\代码\通信结构平台\WPClient\obj\Debug\WPClient.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\WPClient\obj\Debug\WPClient.dll
+D:\OneDrive\代码\通信结构平台\WPClient\obj\Debug\WPClient.pdb

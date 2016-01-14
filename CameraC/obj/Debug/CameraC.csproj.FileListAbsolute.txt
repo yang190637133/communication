@@ -1,0 +1,15 @@
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\CameraC.exe.config
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\CameraC.exe
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\CameraC.pdb
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHPlaySDKCS.pdb
+D:\OneDrive\代码\通信结构平台\CameraC\bin\Debug\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.Form1.resources
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.exe
+D:\OneDrive\代码\通信结构平台\CameraC\obj\Debug\CameraC.pdb

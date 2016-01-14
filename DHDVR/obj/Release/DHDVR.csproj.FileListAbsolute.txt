@@ -1,0 +1,14 @@
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHDVR.dll
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHDVR.pdb
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHNetSDKCS.xml
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHPlaySDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHPlaySDKCS.xml
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHDVR\bin\Release\DHVDCSDKCS.xml
+D:\OneDrive\代码\通信结构平台\DHDVR\obj\Release\DHDVR.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\DHDVR\obj\Release\DHDVR.dll
+D:\OneDrive\代码\通信结构平台\DHDVR\obj\Release\DHDVR.pdb

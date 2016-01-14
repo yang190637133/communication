@@ -1,0 +1,17 @@
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHDVR.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHNetSDKCS.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHDVR.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHNetSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHNetSDKCS.xml
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHPlaySDKCS.pdb
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\bin\Release\DHPlaySDKCS.xml
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Form1.resources
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
+D:\OneDrive\代码\通信结构平台\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb

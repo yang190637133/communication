@@ -1,0 +1,11 @@
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\bin\Debug\p2pserver-vdio.exe.config
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\bin\Debug\p2pserver-vdio.exe
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\bin\Debug\p2pserver-vdio.pdb
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\bin\Debug\TCPServer.dll
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\bin\Debug\TCPServer.pdb
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver-vdio.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver_vdio.Form1.resources
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver_vdio.Properties.Resources.resources
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver-vdio.csproj.GenerateResource.Cache
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver-vdio.exe
+D:\OneDrive\代码\通信结构平台\p2pserver-vdio\obj\Debug\p2pserver-vdio.pdb

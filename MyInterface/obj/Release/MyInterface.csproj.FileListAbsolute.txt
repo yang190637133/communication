@@ -1,0 +1,4 @@
+E:\通信结构平台\MyInterface\bin\Release\MyInterface.dll
+E:\通信结构平台\MyInterface\bin\Release\MyInterface.pdb
+E:\通信结构平台\MyInterface\obj\Release\MyInterface.dll
+E:\通信结构平台\MyInterface\obj\Release\MyInterface.pdb

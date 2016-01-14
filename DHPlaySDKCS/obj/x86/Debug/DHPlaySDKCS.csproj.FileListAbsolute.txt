@@ -1,0 +1,5 @@
+D:\加热锅监控系统\DHPlaySDKCS\bin\x86\Debug\DHPlaySDKCS.dll
+D:\加热锅监控系统\DHPlaySDKCS\bin\x86\Debug\DHPlaySDKCS.pdb
+D:\加热锅监控系统\DHPlaySDKCS\obj\x86\Debug\DHPlaySDKCS.dll
+D:\加热锅监控系统\DHPlaySDKCS\obj\x86\Debug\DHPlaySDKCS.pdb
+D:\加热锅监控系统\DHPlaySDKCS\obj\x86\Debug\DHPlaySDKCS.csprojResolveAssemblyReference.cache

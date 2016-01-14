@@ -1,0 +1,6 @@
+D:\OneDrive\代码\通信结构平台\Release\DHVDCSDKCS.XML
+D:\OneDrive\代码\通信结构平台\Release\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\Release\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHVDCSDKCS\obj\Release\DHVDCSDKCS.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\DHVDCSDKCS\obj\Release\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHVDCSDKCS\obj\Release\DHVDCSDKCS.pdb

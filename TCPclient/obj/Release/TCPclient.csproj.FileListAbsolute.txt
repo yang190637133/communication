@@ -1,0 +1,4 @@
+E:\通信结构平台\TCPclient\bin\Release\TCPclient.dll
+E:\通信结构平台\TCPclient\bin\Release\TCPclient.pdb
+E:\通信结构平台\TCPclient\obj\Release\TCPclient.dll
+E:\通信结构平台\TCPclient\obj\Release\TCPclient.pdb

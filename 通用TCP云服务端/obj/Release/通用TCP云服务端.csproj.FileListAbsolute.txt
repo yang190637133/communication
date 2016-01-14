@@ -1,0 +1,14 @@
+E:\通信结构平台\通用TCP云服务端\bin\Release\TCPCloud.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\TCPCloud.pdb
+E:\通信结构平台\通用TCP云服务端\bin\Release\MyInterface.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\Newtonsoft.Json.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\P2PServer.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\StandardModel.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\TCPclient.dll
+E:\通信结构平台\通用TCP云服务端\bin\Release\MyInterface.pdb
+E:\通信结构平台\通用TCP云服务端\bin\Release\P2PServer.pdb
+E:\通信结构平台\通用TCP云服务端\bin\Release\StandardModel.pdb
+E:\通信结构平台\通用TCP云服务端\bin\Release\TCPclient.pdb
+E:\通信结构平台\通用TCP云服务端\obj\Release\通用TCP云服务端.csprojResolveAssemblyReference.cache
+E:\通信结构平台\通用TCP云服务端\obj\Release\TCPCloud.dll
+E:\通信结构平台\通用TCP云服务端\obj\Release\TCPCloud.pdb

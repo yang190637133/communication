@@ -1,0 +1,8 @@
+D:\加热锅监控系统\Debug\DHVDCSDKCS.dll
+D:\加热锅监控系统\Debug\DHVDCSDKCS.pdb
+D:\加热锅监控系统\DHVDCSDKCS\obj\Debug\DHVDCSDKCS.dll
+D:\加热锅监控系统\DHVDCSDKCS\obj\Debug\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\Debug\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\Debug\DHVDCSDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHVDCSDKCS\obj\Debug\DHVDCSDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHVDCSDKCS\obj\Debug\DHVDCSDKCS.pdb

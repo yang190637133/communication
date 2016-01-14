@@ -1,0 +1,4 @@
+D:\加热锅监控系统\DaHuaNetSDK.CS\bin\x86\Debug\DHNetSDKCS.dll
+D:\加热锅监控系统\DaHuaNetSDK.CS\bin\x86\Debug\DHNetSDKCS.pdb
+D:\加热锅监控系统\DaHuaNetSDK.CS\obj\x86\Debug\DHNetSDKCS.dll
+D:\加热锅监控系统\DaHuaNetSDK.CS\obj\x86\Debug\DHNetSDKCS.pdb

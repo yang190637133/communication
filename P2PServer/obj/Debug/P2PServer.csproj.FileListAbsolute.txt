@@ -1,0 +1,5 @@
+D:\通信结构平台\P2PServer\bin\Debug\P2PServer.dll
+D:\通信结构平台\P2PServer\bin\Debug\P2PServer.pdb
+D:\通信结构平台\P2PServer\obj\Debug\P2PServer.dll
+D:\通信结构平台\P2PServer\obj\Debug\P2PServer.pdb
+D:\通信结构平台\P2PServer\obj\Debug\P2PServer.csprojResolveAssemblyReference.cache

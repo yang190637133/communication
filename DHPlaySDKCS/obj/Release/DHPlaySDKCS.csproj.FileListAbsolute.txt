@@ -1,0 +1,6 @@
+D:\OneDrive\代码\通信结构平台\Release\DHPlaySDKCS.XML
+D:\OneDrive\代码\通信结构平台\Release\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\Release\DHPlaySDKCS.pdb
+D:\OneDrive\代码\通信结构平台\DHPlaySDKCS\obj\Release\DHPlaySDKCS.csprojResolveAssemblyReference.cache
+D:\OneDrive\代码\通信结构平台\DHPlaySDKCS\obj\Release\DHPlaySDKCS.dll
+D:\OneDrive\代码\通信结构平台\DHPlaySDKCS\obj\Release\DHPlaySDKCS.pdb

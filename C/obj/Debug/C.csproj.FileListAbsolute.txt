@@ -1,0 +1,12 @@
+D:\通信结构平台\C\bin\Debug\C.dll
+D:\通信结构平台\C\bin\Debug\C.pdb
+D:\通信结构平台\C\obj\Debug\C.dll
+D:\通信结构平台\C\obj\Debug\C.pdb
+E:\通信结构平台\C\bin\Debug\C.dll
+E:\通信结构平台\C\bin\Debug\C.pdb
+E:\通信结构平台\C\obj\Debug\C.dll
+E:\通信结构平台\C\obj\Debug\C.pdb
+D:\OneDrive\代码\通信结构平台\C\bin\Debug\C.dll
+D:\OneDrive\代码\通信结构平台\C\bin\Debug\C.pdb
+D:\OneDrive\代码\通信结构平台\C\obj\Debug\C.dll
+D:\OneDrive\代码\通信结构平台\C\obj\Debug\C.pdb

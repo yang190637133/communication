@@ -1,0 +1,1103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs1205\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="D:\OneDrive\代码\通信结构平台\Release\DHNetSDKCS.dll">
+   <Modules>
+    <Module Name="dhnetsdkcs.dll">
+     <Namespaces>
+      <Namespace Name="DHNetSDK">
+       <Types>
+        <Type Name="CFG_ANALYSERULES_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+           <Issue Certainty="50" Level="CriticalError">在 'CFG_ANALYSERULES_INFO' 上实现 IDisposable。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#pRuleBuf" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_ANALYSERULES_INFO.pRuleBuf' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_DIAGNOSIS_PROJECT" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstProjectTasks" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_DIAGNOSIS_PROJECT.pstProjectTasks' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_DIAGNOSIS_TASK" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstSources" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_DIAGNOSIS_TASK.pstSources' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_MULTICASTS_INFO_IN" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pRTPMulticast" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_MULTICASTS_INFO_IN.pRTPMulticast' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pTSMulticast" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_MULTICASTS_INFO_IN.pTSMulticast' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_STORAGEGROUP_INFO" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#byDisks" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_STORAGEGROUP_INFO.byDisks' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_VIDEO_DIAGNOSIS_PROFILE" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstBlur" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstBlur' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstBrightness" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstBrightness' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstContrast" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstContrast' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstCover" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstCover' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstDither" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstDither' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstFrozen" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstFrozen' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstLoss" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstLoss' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstNoise" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstNoise' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstSceneChange" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstSceneChange' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstStriation" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstStriation' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#pstUnbalance" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEO_DIAGNOSIS_PROFILE.pstUnbalance' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_VIDEODIAGNOSIS_GLOBAL" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstGlobals" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEODIAGNOSIS_GLOBAL.pstGlobals' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_VIDEODIAGNOSIS_PROFILE" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstProfiles" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEODIAGNOSIS_PROFILE.pstProfiles' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_VIDEODIAGNOSIS_PROJECT" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstProjects" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEODIAGNOSIS_PROJECT.pstProjects' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CFG_VIDEODIAGNOSIS_TASK" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pstTasks" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'CFG_VIDEODIAGNOSIS_TASK.pstTasks' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DHClient" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CLIENT_CapturePicture(System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_CapturePicture(int, string)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchPicFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Cleanup()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_Cleanup()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_ClientGetVideoEffect(System.Int32,System.Byte&amp;,System.Byte&amp;,System.Byte&amp;,System.Byte&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_ClientGetVideoEffect(int, ref byte, ref byte, ref byte, ref byte)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_ClientSetVideoEffect(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_ClientSetVideoEffect(int, byte, byte, byte, byte)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_ControlDevice(System.Int32,DHNetSDK.CtrlType,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_ControlDevice(int, CtrlType, IntPtr, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DHPTZControl(System.Int32,System.Int32,System.UInt16,System.UInt16,System.UInt16,System.UInt16,System.Boolean,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_DHPTZControl(int, int, ushort, ushort, ushort, ushort, bool, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DHPTZControlEx(System.Int32,System.Int32,System.UInt16,System.Int32,System.Int32,System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_DHPTZControlEx(int, int, ushort, int, int, int, bool)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DownloadByRecordFile(System.Int32,DHNetSDK.NET_RECORDFILE_INFO&amp;,System.String,DHNetSDK.fDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_DownloadByRecordFile(int, ref NET_RECORDFILE_INFO, string, fDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'sSavedFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DownloadByTime(System.Int32,System.Int32,System.Int32,DHNetSDK.NET_TIME&amp;,DHNetSDK.NET_TIME&amp;,System.String,DHNetSDK.fTimeDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_DownloadByTime(int, int, int, ref NET_TIME, ref NET_TIME, string, fTimeDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'sSavedFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DownloadMediaFile(System.Int32,DHNetSDK.EM_FILE_QUERY_TYPE,System.IntPtr,System.String,DHNetSDK.fDownLoadPosCallBack,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_DownloadMediaFile(int, EM_FILE_QUERY_TYPE, IntPtr, string, fDownLoadPosCallBack, uint, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'sSavedFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_FastPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_FastPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_FindCloseEx(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_FindCloseEx(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_FindFileEx(System.Int32,DHNetSDK.EM_FILE_QUERY_TYPE,System.IntPtr,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_FindFileEx(int, EM_FILE_QUERY_TYPE, IntPtr, IntPtr, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_FindNextFileEx(System.Int32,System.Int32,System.IntPtr,System.Int32,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_FindNextFileEx(int, int, IntPtr, int, IntPtr, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetDevConfig(System.Int32,System.UInt32,System.Int32,System.IntPtr,System.UInt32,System.UInt32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_GetDevConfig(int, uint, int, IntPtr, uint, ref uint, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetDownloadPos(System.Int32,System.Int32&amp;,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_GetDownloadPos(int, out int, out int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetLastError()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_GetLastError()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetNewDevConfig(System.Int32,System.String,System.Int32,System.IntPtr,System.UInt32,System.UInt32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_GetNewDevConfig(int, string, int, IntPtr, uint, ref uint, int)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'szCommand' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetSDKVersion()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_GetSDKVersion()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Init(DHNetSDK.fDisConnect,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_Init(fDisConnect, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Login(System.String,System.UInt16,System.String,System.String,DHNetSDK.NET_DEVICEINFO&amp;,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_Login(string, ushort, string, string, out NET_DEVICEINFO, out int)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchDVRIP' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchUserName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchPassword' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_LoginEx(System.String,System.UInt16,System.String,System.String,System.Int32,System.String,DHNetSDK.NET_DEVICEINFO&amp;,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_LoginEx(string, ushort, string, string, int, string, out NET_DEVICEINFO, out int)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchDVRIP' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchUserName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchPassword' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pCapParam' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Logout(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_Logout(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_OperateUserInfo(System.Int32,System.Int32,System.IntPtr,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_OperateUserInfo(int, int, IntPtr, IntPtr, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PacketData(System.String,System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PacketData(string, IntPtr, uint, IntPtr, uint)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'strCommand' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_ParseData(System.String,System.IntPtr,System.IntPtr,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_ParseData(string, IntPtr, IntPtr, uint, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'szCommand' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PausePlayBack(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PausePlayBack(int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByRecordFile(System.Int32,DHNetSDK.NET_RECORDFILE_INFO&amp;,System.IntPtr,DHNetSDK.fDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PlayBackByRecordFile(int, ref NET_RECORDFILE_INFO, IntPtr, fDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByRecordFileEx(System.Int32,DHNetSDK.NET_RECORDFILE_INFO&amp;,System.IntPtr,DHNetSDK.fDownLoadPosCallBack,System.IntPtr,DHNetSDK.fDataCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PlayBackByRecordFileEx(int, ref NET_RECORDFILE_INFO, IntPtr, fDownLoadPosCallBack, IntPtr, fDataCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByTime(System.Int32,System.Int32,DHNetSDK.NET_TIME&amp;,DHNetSDK.NET_TIME&amp;,System.IntPtr,DHNetSDK.fDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PlayBackByTime(int, int, ref NET_TIME, ref NET_TIME, IntPtr, fDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByTimeEx(System.Int32,System.Int32,DHNetSDK.NET_TIME&amp;,DHNetSDK.NET_TIME&amp;,System.IntPtr,DHNetSDK.fDownLoadPosCallBack,System.IntPtr,DHNetSDK.fDataCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PlayBackByTimeEx(int, int, ref NET_TIME, ref NET_TIME, IntPtr, fDownLoadPosCallBack, IntPtr, fDataCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PTZControl(System.Int32,System.Int32,System.UInt16,System.UInt16,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_PTZControl(int, int, ushort, ushort, bool)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryChannelName(System.Int32,System.Char&amp;,System.Int32,System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryChannelName(int, ref char, int, ref int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryComProtocol(System.Int32,System.Int32,System.Char&amp;,System.Int32,System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryComProtocol(int, int, ref char, int, ref int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryConfig(System.Int32,System.Int32,System.Char&amp;,System.Int32,System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryConfig(int, int, ref char, int, ref int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryDevState(System.Int32,System.Int32,System.IntPtr,System.Int32,System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryDevState(int, int, IntPtr, int, ref int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryNewSystemInfo(System.Int32,System.String,System.Int32,System.IntPtr,System.UInt32,System.UInt32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryNewSystemInfo(int, string, int, IntPtr, uint, ref uint, int)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'szCommand' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryRecordFile(System.Int32,System.Int32,System.Int32,DHNetSDK.NET_TIME&amp;,DHNetSDK.NET_TIME&amp;,System.String,System.IntPtr,System.Int32,System.Int32&amp;,System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryRecordFile(int, int, int, ref NET_TIME, ref NET_TIME, string, IntPtr, int, out int, int, bool)'。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchCardid' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QuerySystemInfo(System.Int32,System.Int32,System.IntPtr,System.Int32,System.Int32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QuerySystemInfo(int, int, IntPtr, int, ref int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryUserInfo(System.Int32,System.IntPtr,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_QueryUserInfo(int, IntPtr, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RealLoadPicture(System.Int32,System.Int32,System.UInt32,DHNetSDK.fAnalyzerDataCallBack,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_RealLoadPicture(int, int, uint, fAnalyzerDataCallBack, uint)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RealLoadPictureEx(System.Int32,System.Int32,System.UInt32,System.Boolean,DHNetSDK.fAnalyzerDataCallBack,System.UInt32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_RealLoadPictureEx(int, int, uint, bool, fAnalyzerDataCallBack, uint, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RealPlay(System.Int32,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_RealPlay(int, int, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RealPlayEx(System.Int32,System.Int32,System.IntPtr,DHNetSDK.REALPLAY_TYPE)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_RealPlayEx(int, int, IntPtr, REALPLAY_TYPE)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RigisterDrawFun(DHNetSDK.fDrawCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_RigisterDrawFun(fDrawCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SaveRealData(System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SaveRealData(int, string)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SeekPlayBack(System.Int32,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SeekPlayBack(int, uint, uint)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SendUpgrade(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SendUpgrade(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetConnectTime(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetConnectTime(int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetDevConfig(System.Int32,System.UInt32,System.Int32,System.IntPtr,System.UInt32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetDevConfig(int, uint, int, IntPtr, uint, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetDVRMessCallBack(DHNetSDK.fMessCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetDVRMessCallBack(fMessCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetNewDevConfig(System.Int32,System.String,System.Int32,System.IntPtr,System.UInt32,System.UInt32&amp;,System.UInt32&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetNewDevConfig(int, string, int, IntPtr, uint, ref uint, ref uint, int)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'strCommand' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetRealDataCallBack(System.Int32,DHNetSDK.fRealDataCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetRealDataCallBack(int, fRealDataCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetRealDataCallBackEx(System.Int32,DHNetSDK.fRealDataCallBackEx,System.IntPtr,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetRealDataCallBackEx(int, fRealDataCallBackEx, IntPtr, uint)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetSnapRevCallBack(DHNetSDK.fSnapRev,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetSnapRevCallBack(fSnapRev, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetupConfig(System.Int32,System.Int32,System.Char&amp;,System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SetupConfig(int, int, ref char, int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SlowPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SlowPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SnapPicture(System.Int32,DHNetSDK.SNAP_PARAMS)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_SnapPicture(int, SNAP_PARAMS)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartListen(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StartListen(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartListenEx(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StartListenEx(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartSearchDevices(DHNetSDK.fSearchDevicesCB,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StartSearchDevices(fSearchDevicesCB, IntPtr, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartService(System.UInt16,System.String,DHNetSDK.fServiceCallBack,System.IntPtr,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StartService(ushort, string, fServiceCallBack, IntPtr, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pIp' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartUpgradeEx(System.Int32,DHNetSDK.EM_UPGRADE_TYPE,System.String,DHNetSDK.fUpgradeCallBack,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StartUpgradeEx(int, EM_UPGRADE_TYPE, string, fUpgradeCallBack, uint)'。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StepPlayBack(System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StepPlayBack(int, bool)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopDownload(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopDownload(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopDownloadMediaFile(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopDownloadMediaFile(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopListen(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopListen(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopLoadPic(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopLoadPic(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopRealPlay(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopRealPlay(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopRealPlayEx(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopRealPlayEx(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopSaveRealData(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopSaveRealData(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopSearchDevices(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopSearchDevices(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopService(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopService(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopUpgrade(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'DHClient.CLIENT_StopUpgrade(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NET_RESERVED_COMMON" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pIntelBox" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'NET_RESERVED_COMMON.pIntelBox' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReservedDataIntelBox" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#dwPtrEventType" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'ReservedDataIntelBox.dwPtrEventType' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReservedPara" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#pData" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="CriticalError">将 'ReservedPara.pData' 设置为私有的。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="DHNetSDK.CS">
+       <Types>
+        <Type Name="Client" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CLIENT_Cleanup()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_Cleanup()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_CloseSound()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_CloseSound()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DHPTZControl(System.Int32,System.Int32,System.Int32,System.Char,System.Char,System.Char,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_DHPTZControl(int, int, int, char, char, char, bool)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_DownloadByTime(System.Int32,System.Int32,System.Int32,DHNetSDK.CS.NET_TIME&amp;,DHNetSDK.CS.NET_TIME&amp;,System.String,DHNetSDK.fTimeDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_DownloadByTime(int, int, int, ref NET_TIME, ref NET_TIME, string, fTimeDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'sSavedFileName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_FastPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_FastPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_GetLastError()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_GetLastError()'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Init(DHNetSDK.CS.Client+fDisConnect,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_Init(Client.fDisConnect, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Login(System.String,System.UInt16,System.String,System.String,DHNetSDK.CS.NET_DEVICEINFO&amp;,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_Login(string, ushort, string, string, out NET_DEVICEINFO, out int)'。</Issue>
+            </Message>
+            <Message Id="0" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchDVRIP' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="2" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchUserName' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+            <Message Id="3" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchPassword' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_Logout(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_Logout(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_OpenSound(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_OpenSound(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PausePlayBack(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_PausePlayBack(int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByRecordFile(System.Int32,DHNetSDK.NET_RECORDFILE_INFO&amp;,System.IntPtr,DHNetSDK.CS.Client+fDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_PlayBackByRecordFile(int, ref NET_RECORDFILE_INFO, IntPtr, Client.fDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByTime(System.Int32,System.Int32,DHNetSDK.CS.NET_TIME&amp;,DHNetSDK.CS.NET_TIME&amp;,System.IntPtr,DHNetSDK.CS.Client+fDownLoadPosCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_PlayBackByTime(int, int, ref NET_TIME, ref NET_TIME, IntPtr, Client.fDownLoadPosCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_PlayBackByTimeEx(System.Int32,System.Int32,DHNetSDK.CS.NET_TIME&amp;,DHNetSDK.CS.NET_TIME&amp;,System.IntPtr,DHNetSDK.CS.Client+fDownLoadPosCallBack,System.Int32,DHNetSDK.CS.Client+fDataCallBack,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_PlayBackByTimeEx(int, int, ref NET_TIME, ref NET_TIME, IntPtr, Client.fDownLoadPosCallBack, int, Client.fDataCallBack, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_QueryRecordFile(System.Int32,System.Int32,System.Int32,DHNetSDK.CS.NET_TIME&amp;,DHNetSDK.CS.NET_TIME&amp;,System.String,DHNetSDK.NET_RECORDFILE_INFO&amp;,System.Int32,System.Int32&amp;,System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_QueryRecordFile(int, int, int, ref NET_TIME, ref NET_TIME, string, ref NET_RECORDFILE_INFO, int, ref int, int, bool)'。</Issue>
+            </Message>
+            <Message Id="5" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">为了降低安全风险，请将参数 'pchCardid' 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_RealPlay(System.Int32,System.Int32,System.IntPtr)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_RealPlay(int, int, IntPtr)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SeekPlayBack(System.Int32,System.UInt32,System.UInt32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_SeekPlayBack(int, uint, uint)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetupDeviceTime(System.Int32,DHNetSDK.CS.NET_TIME&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_SetupDeviceTime(int, ref NET_TIME)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SetVolume(System.Int32,System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_SetVolume(int, int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_SlowPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_SlowPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StartListen(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StartListen(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StepPlayBack(System.Int32,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StepPlayBack(int, bool)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopDownload(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StopDownload(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopListen(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StopListen(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopPlayBack(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StopPlayBack(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CLIENT_StopRealPlay(System.Int32)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2015-12-06 18:56:50Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 'Client.CLIENT_StopRealPlay(int)'。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>将 P/Invoke 移动到 NativeMethods 类</Name>
+   <Description>此类型包含具有 DllImport 特性的成员。具有 DllImport 特性的成员应包含在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中。</Description>
+   <Resolution Name="Default">由于是 P/Invoke 方法，因此，应在名为 NativeMethods、SafeNativeMethods 或 UnsafeNativeMethods 的类中定义 {0}。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PointersShouldNotBeVisible" Category="Microsoft.Security" CheckId="CA2111">
+   <Name>指针应为不可见</Name>
+   <Description>应将 IntPtr 和 UIntPtr 字段声明为私有。公开非私有指针可能会导致安全漏洞。</Description>
+   <Resolution Name="Default">将 {0} 设置为私有的。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182306.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>指定对 P/Invoke 字符串参数进行封送处理</Name>
+   <Description>在将字符串封送为 ANSI (在 Win9x 上为 Auto)时，某些字符可能会改变。如果启用了最佳匹配映射，则采用 Unicode 编码时显示样式不同的字符串将封送到相同的 ANSI 字符串，这可能会导致错误的安全决策。禁用最佳匹配映射会降低此风险，因为所有没有等效项的字符都将映射到“?”。另外，请注意，CharSet.Ansi 是所有字符串的默认封送设置；Unicode 封送必须显式指定为 DllImport 或 StructLayout 的 CharSet 设置，或者指定为具有 Unicode (或与系统相关的) UnmanagedType 的 MarshalAs 特性。</Description>
+   <Resolution Name="ParameterImplicitAnsi">为了降低安全风险，请将参数 {0} 封送为 Unicode，方法是将 DllImport.CharSet 设置为 CharSet.Unicode，或者将该参数显式封送为 UnmanagedType.LPWStr。如果您需要将该字符串封送为 ANSI 或者与系统相关的编码，请显式指定 MarshalAs，并设置 BestFitMapping=false；为了提高安全性，还应设置 ThrowOnUnmappableChar=true。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnNativeResourcesShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1049">
+   <Name>拥有本机资源的类型应是可释放的</Name>
+   <Description>分配非托管资源的类型应实现 IDisposable，以便允许调用方根据需要释放这些资源。如果不能实现 IDisposable，则将导致非托管资源不可用或利用不足。</Description>
+   <Resolution Name="Default">在 {0} 上实现 IDisposable。</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182173.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>
